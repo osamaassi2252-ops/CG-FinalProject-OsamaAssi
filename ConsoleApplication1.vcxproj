@@ -102,7 +102,9 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\OSAMA\OneDrive\Desktop\CG-main\lect1\External Libraries\GLFW\include;C:\Users\OSAMA\OneDrive\Desktop\CG-main\lect1\External Libraries\GLEW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)libs\stb;C:\Users\OSAMA\OneDrive\Desktop\glad\include;C:\Users\OSAMA\OneDrive\Desktop\lect6\External Libraries\g-truc-glm-8d1fd52;C:\Users\OSAMA\OneDrive\Desktop\CG-main\lect1\External Libraries\GLFW\include;C:\Users\OSAMA\OneDrive\Desktop\CG-main\lect1\External Libraries\GLEW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -119,7 +121,9 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\OSAMA\OneDrive\Desktop\CG-main\lect1\External Libraries\GLFW\include;C:\Users\OSAMA\OneDrive\Desktop\CG-main\lect1\External Libraries\GLEW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)libs\stb;C:\Users\OSAMA\OneDrive\Desktop\glad\include;C:\Users\OSAMA\OneDrive\Desktop\lect6\External Libraries\g-truc-glm-8d1fd52;C:\Users\OSAMA\OneDrive\Desktop\CG-main\lect1\External Libraries\GLFW\include;C:\Users\OSAMA\OneDrive\Desktop\CG-main\lect1\External Libraries\GLEW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -129,10 +133,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="rectangle.cpp" />
-    <ClCompile Include="triangle.cpp" />
-    <ClCompile Include="برمجة أربع ازرار و الشفافية.cpp" />
-    <ClCompile Include="ساعة حائط بعقارب.cpp" />
+    <ClCompile Include="..\..\..\OneDrive\Desktop\glad\src\glad.c" />
+    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
